@@ -1,0 +1,13 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+  <soap:Header>
+    <context xmlns="urn:zimbra">
+      <authToken>#(userAuthToken)</authToken>
+      <csrfToken>#(csfrToken)</csrfToken>
+    </context>
+  </soap:Header>
+  <soap:Body>
+    <SearchRequest xmlns="urn:zimbraMail" types="message">
+      <query>#(searchQuery)</query>
+    </SearchRequest>
+  </soap:Body>
+</soap:Envelope>

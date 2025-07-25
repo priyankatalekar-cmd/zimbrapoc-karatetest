@@ -1,0 +1,19 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:zimbra" xmlns:urn1="urn:zimbraMail">
+  <soap:Header>
+    <urn:context>
+      <urn:authToken>#(authToken)</urn:authToken>
+      <urn:csrfToken>#(csrfToken)</urn:csrfToken>
+    </urn:context>
+  </soap:Header>
+  <soap:Body>
+    <urn1:SendMsgRequest>
+      <urn1:m>
+        <urn1:su>#(subject)</urn1:su>
+        <urn1:e a="#(to)" t="t"/>
+        <urn1:mp ct="#(contentType)">
+          <urn1:content>#(body)</urn1:content>
+        </urn1:mp>
+      </urn1:m>
+    </urn1:SendMsgRequest>
+  </soap:Body>
+</soap:Envelope>

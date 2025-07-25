@@ -1,0 +1,11 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <context xmlns="urn:zimbra">
+      <authToken>#(authToken)</authToken>
+      <csrfToken>#(csrfToken)</csrfToken>
+    </context>
+  </soap:Header>
+  <soap:Body>
+    <PLACEHOLDER/>
+  </soap:Body>
+</soap:Envelope>

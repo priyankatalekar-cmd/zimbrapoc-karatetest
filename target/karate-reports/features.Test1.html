@@ -1,0 +1,1056 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"d73569c5-0f29-47d9-b810-e1f5465ed49b",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.Test1</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-07-25 03:00:46 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:12]"><span>[1:12]</span> <span>Create appointment using XML template</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/Test1.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Create Zimbra Appointment</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:12]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:12]</span>
+                <span class="scenario-name">Create appointment using XML template</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1882</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:12]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def result = call read(&#39;classpath:features/UserLogin.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1737</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.4.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.UserLogin</div>
+      </div>
+      <div class="time-cell passed">1670</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url userSoapUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.4">15:00:44.312 🔢 Users to create: 5 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment">########################### userLogin Sender###############################################################</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username = &#39;xyz2313490priyankatalekar5@qa-u56-singlenode-ps.eng.zimbra.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def password = &#39;Welcome123&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def env = karate.read(&#39;classpath:requests/authRequestUser.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">139</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/soap+xml&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">404</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">954</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.15">15:00:45.440 request:
+1 &gt; POST https://80.225.207.85/service/soap/
+1 &gt; Content-Type: application/soap+xml; charset=UTF-8
+1 &gt; Content-Length: 359
+1 &gt; Host: 80.225.207.85
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;
+  &lt;soap:Header/&gt;
+  &lt;soap:Body&gt;
+    &lt;AuthRequest xmlns=&quot;urn:zimbraAccount&quot; csrfTokenSecured=&quot;1&quot;&gt;
+      &lt;account by=&quot;name&quot;&gt;xyz2313490priyankatalekar5@qa-u56-singlenode-ps.eng.zimbra.com&lt;/account&gt;
+      &lt;password&gt;Welcome123&lt;/password&gt;
+    &lt;/AuthRequest&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+
+15:00:45.931 response time in milliseconds: 473
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Fri, 25 Jul 2025 09:30:45 GMT
+1 &lt; Content-Type: text/xml;charset=utf-8
+1 &lt; Content-Length: 700
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: ZM_AUTH_TOKEN=0_e40597ad631516bf8784cf88c946c2020e4a1ccc_69643d33363a38303439303461372d346463302d346365642d626437332d6136393836376563653234383b6578703d31333a313735333630383634353838323b747970653d363a7a696d6272613b753d313a613b7469643d393a3839303937303035373b76657273696f6e3d31343a31302e312e305f47415f343635353b637372663d313a313b; Path=/; Secure; HttpOnly
+1 &lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
+1 &lt; X-Zimbra-Csrf-Token: 0_2ccc5c684a18c989a7258d82763c79f29b868b5e
+1 &lt; Cache-Control: no-store, no-cache
+1 &lt; Vary: Accept-Encoding, User-Agent
+&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&lt;soap:Header&gt;&lt;context xmlns=&quot;urn:zimbra&quot;&gt;&lt;change token=&quot;1058&quot;/&gt;&lt;/context&gt;&lt;/soap:Header&gt;&lt;soap:Body&gt;&lt;AuthResponse xmlns=&quot;urn:zimbraAccount&quot;&gt;&lt;authToken&gt;0_e40597ad631516bf8784cf88c946c2020e4a1ccc_69643d33363a38303439303461372d346463302d346365642d626437332d6136393836376563653234383b6578703d31333a313735333630383634353838323b747970653d363a7a696d6272613b753d313a613b7469643d393a3839303937303035373b76657273696f6e3d31343a31302e312e305f47415f343635353b637372663d313a313b&lt;/authToken&gt;&lt;lifetime&gt;172799999&lt;/lifetime&gt;&lt;skin&gt;harmony&lt;/skin&gt;&lt;csrfToken&gt;0_2ccc5c684a18c989a7258d82763c79f29b868b5e&lt;/csrfToken&gt;&lt;/AuthResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userAuthToken = karate.xmlPath(response, &#39;//authToken&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">124</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Auth Token is:&#39;, userAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.18">15:00:46.085 [print] Auth Token is: 0_e40597ad631516bf8784cf88c946c2020e4a1ccc_69643d33363a38303439303461372d346463302d346365642d626437332d6136393836376563653234383b6578703d31333a313735333630383634353838323b747970653d363a7a696d6272613b753d313a613b7469643d393a3839303937303035373b76657273696f6e3d31343a31302e312e305f47415f343635353b637372663d313a313b 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def csfrToken = karate.xmlPath(response,&#39;//csrfToken&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.4.0.call">
+    <div class="step-container" id="0.4.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;csrfToken is:&#39;, csfrToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4.0.call.0.20">15:00:46.097 [print] csrfToken is: 0_2ccc5c684a18c989a7258d82763c79f29b868b5e 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = result.userAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print authToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">15:00:46.107 [print] 0_e40597ad631516bf8784cf88c946c2020e4a1ccc_69643d33363a38303439303461372d346463302d346365642d626437332d6136393836376563653234383b6578703d31333a313735333630383634353838323b747970653d363a7a696d6272613b753d313a613b7469643d393a3839303937303035373b76657273696f6e3d31343a31302e312e305f47415f343635353b637372663d313a313b 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def csrfToken = result.csfrToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print csrfToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.8">15:00:46.112 [print] 0_2ccc5c684a18c989a7258d82763c79f29b868b5e 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def env = karate.read(&#39;classpath:requests/soap-envelope.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:12]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def XmlTemplateProcessor = Java.type(&#39;utils.XmlTemplateProcessor&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Define appointment data</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.14">
+      <div class="step-ref passed">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def appointment = { subject: &quot;Team Meeting&quot;, location: &quot;Conference Room A&quot;, content: &quot;Discuss project updates&quot; }</span>
+      </div>
+    </div>
+    <div class="time-cell passed">37</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def attendee = &quot;attendee@example.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def organizer = &quot;organizer@example.com&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def startTime = &quot;20250725T100000Z&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def endTime = &quot;20250725T110000Z&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Define appointment request body</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.20">
+      <div class="step-ref passed">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>text appointmentBodyRaw =</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  <div class="preformatted" data-parent="0.20">&lt;CreateAppointmentRequest xmlns=&quot;urn:zimbraMail&quot;&gt;
+  &lt;m&gt;
+    &lt;inv method=&quot;REQUEST&quot; type=&quot;event&quot; fb=&quot;B&quot; transp=&quot;O&quot; allDay=&quot;0&quot;
+         name=&quot;SUBJECT_VALUE&quot; loc=&quot;LOCATION_VALUE&quot;&gt;
+      &lt;at role=&quot;OPT&quot; ptst=&quot;NE&quot; rsvp=&quot;1&quot; a=&quot;ATTENDEE_VALUE&quot;/&gt;
+      &lt;s d=&quot;START_TIME_VALUE&quot;/&gt;
+      &lt;e d=&quot;END_TIME_VALUE&quot;/&gt;
+      &lt;or a=&quot;ORGANIZER_VALUE&quot;/&gt;
+    &lt;/inv&gt;
+    &lt;e a=&quot;ATTENDEE_VALUE&quot; t=&quot;t&quot;/&gt;
+    &lt;mp content-type=&quot;text/plain&quot;&gt;
+      &lt;content&gt;CONTENT_VALUE&lt;/content&gt;
+    &lt;/mp&gt;
+    &lt;su&gt;SUBJECT_VALUE&lt;/su&gt;
+  &lt;/m&gt;
+&lt;/CreateAppointmentRequest&gt;</div>
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def processedBody = appointmentBodyRaw.replaceAll(&#39;SUBJECT_VALUE&#39;, appointment.subject).replaceAll(&#39;LOCATION_VALUE&#39;, appointment.location).replaceAll(&#39;CONTENT_VALUE&#39;, appointment.content).replaceAll(&#39;ATTENDEE_VALUE&#39;, attendee).replaceAll(&#39;ORGANIZER_VALUE&#39;, organizer).replaceAll(&#39;START_TIME_VALUE&#39;, startTime).replaceAll(&#39;END_TIME_VALUE&#39;, endTime)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">39</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Process template to create final SOAP request</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.41">
+      <div class="step-ref passed">41</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def soapEnvelope = XmlTemplateProcessor.processTemplate(&#39;src/test/resources/requests/soap-envelope.xml&#39;, processedBody)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">24</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def finalSoapRequest = soapEnvelope.replace(&#39;#(authToken)&#39;, authToken).replace(&#39;#(csrfToken)&#39;, csrfToken)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Final SOAP Request:&#39;, finalSoapRequest</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.43">15:00:46.249 [print] Final SOAP Request: &lt;soap:Envelope xmlns:soap=&quot;http://schemas.xmlsoap.org/soap/envelope/&quot;&gt;
+  &lt;soap:Header&gt;
+    &lt;context xmlns=&quot;urn:zimbra&quot;&gt;
+      &lt;authToken&gt;0_e40597ad631516bf8784cf88c946c2020e4a1ccc_69643d33363a38303439303461372d346463302d346365642d626437332d6136393836376563653234383b6578703d31333a313735333630383634353838323b747970653d363a7a696d6272613b753d313a613b7469643d393a3839303937303035373b76657273696f6e3d31343a31302e312e305f47415f343635353b637372663d313a313b&lt;/authToken&gt;
+      &lt;csrfToken&gt;0_2ccc5c684a18c989a7258d82763c79f29b868b5e&lt;/csrfToken&gt;
+    &lt;/context&gt;
+  &lt;/soap:Header&gt;
+  &lt;soap:Body&gt;
+    &lt;CreateAppointmentRequest xmlns=&quot;urn:zimbraMail&quot;&gt;
+  &lt;m&gt;
+    &lt;inv allDay=&quot;0&quot; fb=&quot;B&quot; loc=&quot;Conference Room A&quot; method=&quot;REQUEST&quot; name=&quot;Team Meeting&quot; transp=&quot;O&quot; type=&quot;event&quot;&gt;
+      &lt;at a=&quot;attendee@example.com&quot; ptst=&quot;NE&quot; role=&quot;OPT&quot; rsvp=&quot;1&quot;/&gt;
+      &lt;s d=&quot;20250725T100000Z&quot;/&gt;
+      &lt;e d=&quot;20250725T110000Z&quot;/&gt;
+      &lt;or a=&quot;organizer@example.com&quot;/&gt;
+    &lt;/inv&gt;
+    &lt;e a=&quot;attendee@example.com&quot; t=&quot;t&quot;/&gt;
+    &lt;mp content-type=&quot;text/plain&quot;&gt;
+      &lt;content&gt;Discuss project updates&lt;/content&gt;
+    &lt;/mp&gt;
+    &lt;su&gt;Team Meeting&lt;/su&gt;
+  &lt;/m&gt;
+&lt;/CreateAppointmentRequest&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt; 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

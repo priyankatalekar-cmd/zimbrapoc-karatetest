@@ -1,0 +1,71 @@
+-------------------------------------------------------------------------------
+Test set: Runner.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.183 s <<< FAILURE! -- in Runner.RunnerTest
+features/SendMail.[1:17] Send email using builder and rendered template -- Time elapsed: 5.276 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+js failed:
+>>>>
+01: read('classpath:helpers/builder.js')
+<<<<
+org.graalvm.polyglot.PolyglotException: js failed:
+>>>>
+01: (function buildEmailPayload(data) {
+02:   var payload = {
+03:     authToken: data.authToken,
+04:     csrfToken: data.csrfToken,
+05:     subject: data.subject || null,
+06:     to: data.to || null,
+07:     contentType: data.contentType || 'text/plain',
+08:     body: data.body || ''
+09:   };
+10:   return payload;
+11: }
+12: 
+13: function fn() {
+14:   return { buildEmailPayload: buildEmailPayload };
+15: }
+16: )
+<<<<
+org.graalvm.polyglot.PolyglotException: SyntaxError: Unnamed:13:0 Expected ) but found function
+function fn() {
+^
+Unnamed:14:2 Invalid return statement
+  return { buildEmailPayload: buildEmailPayload };
+  ^
+Unnamed:15:0 Expected eof but found }
+}
+^
+
+- org.graalvm.polyglot.Context.eval(Context.java:425)
+- com.intuit.karate.graal.JsEngine.evalForValue(JsEngine.java:169)
+- com.intuit.karate.graal.JsEngine.eval(JsEngine.java:165)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1286)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- <js>.:program(Unnamed:1)
+
+- com.intuit.karate.graal.JsEngine.fromJsEvalException(JsEngine.java:253)
+- com.intuit.karate.core.ScenarioEngine.evalJs(ScenarioEngine.java:1288)
+- com.intuit.karate.core.ScenarioFileReader.readFile(ScenarioFileReader.java:59)
+- com.intuit.karate.core.ScenarioEngine.lambda$new$0(ScenarioEngine.java:124)
+- <js>.:program(Unnamed:1)
+
+classpath:features/SendMail.feature:18
+	at com.intuit.karate.junit5.FeatureNode.lambda$next$1(FeatureNode.java:86)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEachOrdered(ReferencePipeline.java:601)
+	at java.base/java.util.Optional.ifPresent(Optional.java:178)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

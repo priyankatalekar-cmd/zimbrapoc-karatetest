@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:zimbra" xmlns:urn1="urn:zimbraAdmin">
+   <soapenv:Header>
+      
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:AuthRequest  name="#(username)" password="#(password)">
+      </urn1:AuthRequest>
+   </soapenv:Body>
+</soapenv:Envelope>

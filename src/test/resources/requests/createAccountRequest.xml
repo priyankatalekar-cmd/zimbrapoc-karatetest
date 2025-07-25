@@ -1,0 +1,13 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:zimbra" xmlns:urn1="urn:zimbraAdmin">
+   <soapenv:Header>
+   <context xmlns="urn:zimbra">
+	<authToken>#(authToken)</authToken>
+   </context>
+   </soapenv:Header>
+   <soapenv:Body>
+      <urn1:CreateAccountRequest 
+      name="#(email)" 
+      password="Welcome123">
+      </urn1:CreateAccountRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
