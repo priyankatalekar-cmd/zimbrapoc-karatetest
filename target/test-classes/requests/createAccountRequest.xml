@@ -8,6 +8,7 @@
       <urn1:CreateAccountRequest 
       name="#(email)" 
       password="Welcome123">
+#(accountTag)  
       </urn1:CreateAccountRequest>
    </soapenv:Body>
 </soapenv:Envelope>
