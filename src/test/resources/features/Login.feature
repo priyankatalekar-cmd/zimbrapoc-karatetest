@@ -1,4 +1,4 @@
-Feature: Login to Zimbra using SOAP API
+Feature: Login to Zimbra using SOAP API- Admin 
 
   Background: 
     * url adminSoapUrl
@@ -18,4 +18,7 @@ Feature: Login to Zimbra using SOAP API
 
     Examples: 
       | karate.read('classpath:testData/usersAdminValid.csv') |
+      
+
+      
       

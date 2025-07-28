@@ -1,0 +1,26 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Header>
+    <context xmlns="urn:zimbra">
+      <authToken>#(authToken)</authToken>
+      <csrfToken>#(csfrToken)</csrfToken>
+    </context>
+  </soap:Header>
+  <soap:Body>
+    <CreateAppointmentRequest xmlns="urn:zimbraMail">
+      <m>
+        <inv method="REQUEST" type="event" fb="B" transp="O" allDay="0"
+             name="#(appointment.subject)" loc="#(appointment.location)">
+          <at role="OPT" ptst="NE" rsvp="1" a="#(attendee)"/>
+          <s d="#(startTime)"/>
+          <e d="#(endTime)"/>
+          <or a="#(organizer)"/>
+        </inv>
+        <e a="#(attendee)" t="t"/>
+        <mp content-type="text/plain">
+          <content>#(appointment.content)</content>
+        </mp>
+        <su>#(appointment.subject)</su>
+      </m>
+    </CreateAppointmentRequest>
+  </soap:Body>
+</soap:Envelope>
