@@ -1,0 +1,1822 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <script type="text/javascript" src="res/Resemble.js"></script>
+    <script>
+!function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
+  api_host:'https://app.posthog.com',
+  persistence:'localStorage',
+  autocapture:false,
+  capture_pageview:false,
+  api_transport:'sendBeacon',
+  loaded: function(posthog) { 
+    posthog.capture("report_feature",{distinct_id:"d73569c5-0f29-47d9-b810-e1f5465ed49b",karate_version:"1.4.1",karate_meta:null});
+  }
+});
+</script>
+
+    <title>features.conditionalLogic</title>
+  </head>
+  <body>
+    <div id="root-container">
+      <div id="leftnav">
+        
+        <div>
+  <div class="nav-logo">
+    <a href="https://karatelabs.io">
+      <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">2</div>
+    </div>
+  </div>
+  <div id="nav-env">
+    <div></div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>
+  <div id="nav-date">
+    <div>2025-07-25 09:53:53 pm</div>
+  </div>
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item failed">
+            <a href="#[1:11]"><span>[1:11]</span> <span>Create Contact - Simple Working Version</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[2:31]"><span>[2:31]</span> <span>Create Contact - With Company</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">features/conditionalLogic.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Zimbra Contact Creation - Sanity Tests</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:11]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">sanity</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:11]</span>
+                <span class="scenario-name">Create Contact - Simple Working Version</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>2037</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1:11]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url userSoapUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">21:53:51.154 🔢 Users to create: 5 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">425</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def result = call read(&#39;classpath:features/UserLogin.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1420</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.UserLogin</div>
+      </div>
+      <div class="time-cell passed">1368</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url userSoapUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment">########################### userLogin Sender###############################################################</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username = &#39;xyz2313490priyankatalekar5@qa-u56-singlenode-ps.eng.zimbra.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def password = &#39;Welcome123&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def env = karate.read(&#39;classpath:requests/authRequestUser.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">152</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/soap+xml&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1069</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.15">21:53:52.365 request:
+1 &gt; POST https://80.225.207.85/service/soap/
+1 &gt; Content-Type: application/soap+xml; charset=UTF-8
+1 &gt; Content-Length: 359
+1 &gt; Host: 80.225.207.85
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;
+  &lt;soap:Header/&gt;
+  &lt;soap:Body&gt;
+    &lt;AuthRequest xmlns=&quot;urn:zimbraAccount&quot; csrfTokenSecured=&quot;1&quot;&gt;
+      &lt;account by=&quot;name&quot;&gt;xyz2313490priyankatalekar5@qa-u56-singlenode-ps.eng.zimbra.com&lt;/account&gt;
+      &lt;password&gt;Welcome123&lt;/password&gt;
+    &lt;/AuthRequest&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+
+21:53:52.905 response time in milliseconds: 524
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Fri, 25 Jul 2025 16:23:53 GMT
+1 &lt; Content-Type: text/xml;charset=utf-8
+1 &lt; Content-Length: 700
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: ZM_AUTH_TOKEN=0_70f2c32cb4c83685128eda82d04323233ea43b39_69643d33363a38303439303461372d346463302d346365642d626437332d6136393836376563653234383b6578703d31333a313735333633333433333132353b747970653d363a7a696d6272613b753d313a613b7469643d393a3531363430323730313b76657273696f6e3d31343a31302e312e305f47415f343635353b637372663d313a313b; Path=/; Secure; HttpOnly
+1 &lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
+1 &lt; X-Zimbra-Csrf-Token: 0_5008c71e9ac9b54b16775d25585dffdff31b901f
+1 &lt; Cache-Control: no-store, no-cache
+1 &lt; Vary: Accept-Encoding, User-Agent
+&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&lt;soap:Header&gt;&lt;context xmlns=&quot;urn:zimbra&quot;&gt;&lt;change token=&quot;1069&quot;/&gt;&lt;/context&gt;&lt;/soap:Header&gt;&lt;soap:Body&gt;&lt;AuthResponse xmlns=&quot;urn:zimbraAccount&quot;&gt;&lt;authToken&gt;0_70f2c32cb4c83685128eda82d04323233ea43b39_69643d33363a38303439303461372d346463302d346365642d626437332d6136393836376563653234383b6578703d31333a313735333633333433333132353b747970653d363a7a696d6272613b753d313a613b7469643d393a3531363430323730313b76657273696f6e3d31343a31302e312e305f47415f343635353b637372663d313a313b&lt;/authToken&gt;&lt;lifetime&gt;172799998&lt;/lifetime&gt;&lt;skin&gt;harmony&lt;/skin&gt;&lt;csrfToken&gt;0_5008c71e9ac9b54b16775d25585dffdff31b901f&lt;/csrfToken&gt;&lt;/AuthResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userAuthToken = karate.xmlPath(response, &#39;//authToken&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">105</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Auth Token is:&#39;, userAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.18">21:53:53.041 [print] Auth Token is: 0_70f2c32cb4c83685128eda82d04323233ea43b39_69643d33363a38303439303461372d346463302d346365642d626437332d6136393836376563653234383b6578703d31333a313735333633333433333132353b747970653d363a7a696d6272613b753d313a613b7469643d393a3531363430323730313b76657273696f6e3d31343a31302e312e305f47415f343635353b637372663d313a313b 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def csfrToken = karate.xmlPath(response,&#39;//csrfToken&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">11</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;csrfToken is:&#39;, csfrToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.20">21:53:53.056 [print] csrfToken is: 0_5008c71e9ac9b54b16775d25585dffdff31b901f 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = result.userAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1:11]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def csrfToken = result.csfrToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.12">
+      <div class="step-ref passed">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def timestamp = java.lang.System.currentTimeMillis()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">20</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Build contact XML as a simple string - NO FUNCTIONS</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.15">
+      <div class="step-ref passed">15</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def firstName = &#39;Contact&#39; + timestamp</span>
+      </div>
+    </div>
+    <div class="time-cell passed">37</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.16">
+      <div class="step-ref passed">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def lastName = &#39;User&#39; + timestamp</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.17">
+      <div class="step-ref passed">17</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def email = &#39;test&#39; + timestamp + &#39;@domain.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.18">
+      <div class="step-ref passed">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def contactXml = &#39;&lt;a n=&quot;firstName&quot;&gt;&#39; + firstName + &#39;&lt;/a&gt;&lt;a n=&quot;lastName&quot;&gt;&#39; + lastName + &#39;&lt;/a&gt;&lt;a n=&quot;email&quot;&gt;&#39; + email + &#39;&lt;/a&gt;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Debug - verify what we&#39;re sending</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.21">
+      <div class="step-ref passed">21</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Contact XML:&#39;, contactXml</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.21">21:53:53.136 [print] Contact XML: &lt;a n=&quot;firstName&quot;&gt;Contact1753460633085&lt;/a&gt;&lt;a n=&quot;lastName&quot;&gt;User1753460633085&lt;/a&gt;&lt;a n=&quot;email&quot;&gt;test1753460633085@domain.com&lt;/a&gt; 
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment"># Send request</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="0.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request read(&#39;classpath:requests/createContactDynamic.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">30</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">75</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.25">21:53:53.170 request:
+1 &gt; POST https://80.225.207.85/service/soap/
+1 &gt; Content-Type: application/xml; charset=UTF-8
+1 &gt; Content-Length: 768
+1 &gt; Host: 80.225.207.85
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;
+  &lt;soap:Header&gt;
+    &lt;context xmlns=&quot;urn:zimbra&quot;&gt;
+      &lt;authToken&gt;0_70f2c32cb4c83685128eda82d04323233ea43b39_69643d33363a38303439303461372d346463302d346365642d626437332d6136393836376563653234383b6578703d31333a313735333633333433333132353b747970653d363a7a696d6272613b753d313a613b7469643d393a3531363430323730313b76657273696f6e3d31343a31302e312e305f47415f343635353b637372663d313a313b&lt;/authToken&gt;
+        &lt;csrfToken&gt;0_5008c71e9ac9b54b16775d25585dffdff31b901f&lt;/csrfToken&gt;
+    &lt;/context&gt;
+  &lt;/soap:Header&gt;
+  &lt;soap:Body&gt;
+    &lt;CreateContactRequest xmlns=&quot;urn:zimbraMail&quot;&gt;
+      &lt;cn&gt;
+        
+        #(contactFields)
+    
+      &lt;/cn&gt;
+    &lt;/CreateContactRequest&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+
+21:53:53.238 response time in milliseconds: 66
+1 &lt; 500
+1 &lt; Server: nginx
+1 &lt; Date: Fri, 25 Jul 2025 16:23:53 GMT
+1 &lt; Content-Type: text/xml;charset=utf-8
+1 &lt; Content-Length: 531
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-store, no-cache
+&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&lt;soap:Header&gt;&lt;context xmlns=&quot;urn:zimbra&quot;&gt;&lt;change token=&quot;1069&quot;/&gt;&lt;/context&gt;&lt;/soap:Header&gt;&lt;soap:Body&gt;&lt;soap:Fault&gt;&lt;soap:Code&gt;&lt;soap:Value&gt;soap:Sender&lt;/soap:Value&gt;&lt;/soap:Code&gt;&lt;soap:Reason&gt;&lt;soap:Text&gt;invalid request: contact must have fields&lt;/soap:Text&gt;&lt;/soap:Reason&gt;&lt;soap:Detail&gt;&lt;Error xmlns=&quot;urn:zimbra&quot;&gt;&lt;Code&gt;service.INVALID_REQUEST&lt;/Code&gt;&lt;Trace&gt;qtp1150284200-30693:1753460633491:2f4ae0e4a8b94020&lt;/Trace&gt;&lt;/Error&gt;&lt;/soap:Detail&gt;&lt;/soap:Fault&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.26">
+      <div class="step-ref failed">26</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">12</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.26">21:53:53.255 classpath:features/conditionalLogic.feature:26
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 66, url: https://80.225.207.85/service/soap/, response: 
+&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&lt;soap:Header&gt;&lt;context xmlns=&quot;urn:zimbra&quot;&gt;&lt;change token=&quot;1069&quot;/&gt;&lt;/context&gt;&lt;/soap:Header&gt;&lt;soap:Body&gt;&lt;soap:Fault&gt;&lt;soap:Code&gt;&lt;soap:Value&gt;soap:Sender&lt;/soap:Value&gt;&lt;/soap:Code&gt;&lt;soap:Reason&gt;&lt;soap:Text&gt;invalid request: contact must have fields&lt;/soap:Text&gt;&lt;/soap:Reason&gt;&lt;soap:Detail&gt;&lt;Error xmlns=&quot;urn:zimbra&quot;&gt;&lt;Code&gt;service.INVALID_REQUEST&lt;/Code&gt;&lt;Trace&gt;qtp1150284200-30693:1753460633491:2f4ae0e4a8b94020&lt;/Trace&gt;&lt;/Error&gt;&lt;/soap:Detail&gt;&lt;/soap:Fault&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;
+classpath:features/conditionalLogic.feature:26
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.27">
+      <div class="step-ref skipped">27</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>def contactId = /soap:Envelope/soap:Body/CreateContactResponse/cn/@id</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.28">
+      <div class="step-ref skipped">28</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;SUCCESS! Contact created with ID:&#39;, contactId</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2:31]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                <a class="badge badge-primary" href="karate-tags.html">sanity</a>
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2:31]</span>
+                <span class="scenario-name">Create Contact - With Company</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>220</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2:31]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref bg-step">4</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url userSoapUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">21:53:53.306 🔢 Users to create: 5 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref bg-step">5</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref bg-step">6</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def result = call read(&#39;classpath:features/UserLogin.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">135</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  <div>
+        
+    <div class="step-row">
+      <div class="step-container" id="0.6.0.call">
+        <div class="step-ref bg-step">&gt;&gt;</div>
+        <div class="step-indent"></div>
+        <div class="step-cell passed">features.UserLogin</div>
+      </div>
+      <div class="time-cell passed">114</div>
+    </div>
+    <div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.4">
+      <div class="step-ref bg-step">4</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url userSoapUrl</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      <div class="step-indent"></div>
+      <div class="step-cell comment">########################### userLogin Sender###############################################################</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.9">
+      <div class="step-ref bg-step">9</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def username = &#39;xyz2313490priyankatalekar5@qa-u56-singlenode-ps.eng.zimbra.com&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.10">
+      <div class="step-ref bg-step">10</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def password = &#39;Welcome123&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.11">
+      <div class="step-ref bg-step">11</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def env = karate.read(&#39;classpath:requests/authRequestUser.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.12">
+      <div class="step-ref bg-step">12</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>request env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.13">
+      <div class="step-ref bg-step">13</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>header Content-Type = &#39;application/soap+xml&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.14">
+      <div class="step-ref bg-step">14</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.15">
+      <div class="step-ref bg-step">15</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method POST</span>
+      </div>
+    </div>
+    <div class="time-cell passed">76</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.15">21:53:53.352 request:
+1 &gt; POST https://80.225.207.85/service/soap/
+1 &gt; Content-Type: application/soap+xml; charset=UTF-8
+1 &gt; Content-Length: 359
+1 &gt; Host: 80.225.207.85
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;
+  &lt;soap:Header/&gt;
+  &lt;soap:Body&gt;
+    &lt;AuthRequest xmlns=&quot;urn:zimbraAccount&quot; csrfTokenSecured=&quot;1&quot;&gt;
+      &lt;account by=&quot;name&quot;&gt;xyz2313490priyankatalekar5@qa-u56-singlenode-ps.eng.zimbra.com&lt;/account&gt;
+      &lt;password&gt;Welcome123&lt;/password&gt;
+    &lt;/AuthRequest&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+
+21:53:53.419 response time in milliseconds: 65
+1 &lt; 200
+1 &lt; Server: nginx
+1 &lt; Date: Fri, 25 Jul 2025 16:23:53 GMT
+1 &lt; Content-Type: text/xml;charset=utf-8
+1 &lt; Content-Length: 704
+1 &lt; Connection: keep-alive
+1 &lt; Set-Cookie: ZM_AUTH_TOKEN=0_967036304c2fcee460d63abe2f4245dcc309953e_69643d33363a38303439303461372d346463302d346365642d626437332d6136393836376563653234383b6578703d31333a313735333633333433333637303b747970653d363a7a696d6272613b753d313a613b7469643d31303a313634393235343336373b76657273696f6e3d31343a31302e312e305f47415f343635353b637372663d313a313b; Path=/; Secure; HttpOnly
+1 &lt; Expires: Thu, 01 Jan 1970 00:00:00 GMT
+1 &lt; X-Zimbra-Csrf-Token: 0_0deae545a1479e9b6d91f84e0bff3fdd87a303d9
+1 &lt; Cache-Control: no-store, no-cache
+1 &lt; Vary: Accept-Encoding, User-Agent
+&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&lt;soap:Header&gt;&lt;context xmlns=&quot;urn:zimbra&quot;&gt;&lt;change token=&quot;1069&quot;/&gt;&lt;/context&gt;&lt;/soap:Header&gt;&lt;soap:Body&gt;&lt;AuthResponse xmlns=&quot;urn:zimbraAccount&quot;&gt;&lt;authToken&gt;0_967036304c2fcee460d63abe2f4245dcc309953e_69643d33363a38303439303461372d346463302d346365642d626437332d6136393836376563653234383b6578703d31333a313735333633333433333637303b747970653d363a7a696d6272613b753d313a613b7469643d31303a313634393235343336373b76657273696f6e3d31343a31302e312e305f47415f343635353b637372663d313a313b&lt;/authToken&gt;&lt;lifetime&gt;172799998&lt;/lifetime&gt;&lt;skin&gt;harmony&lt;/skin&gt;&lt;csrfToken&gt;0_0deae545a1479e9b6d91f84e0bff3fdd87a303d9&lt;/csrfToken&gt;&lt;/AuthResponse&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.16">
+      <div class="step-ref bg-step">16</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.17">
+      <div class="step-ref bg-step">17</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def userAuthToken = karate.xmlPath(response, &#39;//authToken&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.18">
+      <div class="step-ref bg-step">18</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;Auth Token is:&#39;, userAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.18">21:53:53.436 [print] Auth Token is: 0_967036304c2fcee460d63abe2f4245dcc309953e_69643d33363a38303439303461372d346463302d346365642d626437332d6136393836376563653234383b6578703d31333a313735333633333433333637303b747970653d363a7a696d6272613b753d313a613b7469643d31303a313634393235343336373b76657273696f6e3d31343a31302e312e305f47415f343635353b637372663d313a313b 
+</div>   
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.19">
+      <div class="step-ref bg-step">19</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def csfrToken = karate.xmlPath(response,&#39;//csrfToken&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">10</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+      <div><div>
+  
+
+  
+
+  <div class="step-row" data-parent="0.6.0.call">
+    <div class="step-container" id="0.6.0.call.0.20">
+      <div class="step-ref bg-step">20</div>
+      <div class="step-indent"></div>
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print &#39;csrfToken is:&#39;, csfrToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6.0.call.0.20">21:53:53.448 [print] csrfToken is: 0_0deae545a1479e9b6d91f84e0bff3fdd87a303d9 
+</div>   
+
+  
+
+</div>
+</div>
+    </div>    
+  </div>
+
+</div>
+</div>
+          <div data-parent="[2:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.7">
+      <div class="step-ref bg-step">7</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def authToken = result.userAuthToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2:31]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def csrfToken = result.csfrToken</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.32">
+      <div class="step-ref passed">32</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def timestamp = java.lang.System.currentTimeMillis()</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.33">
+      <div class="step-ref passed">33</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def contactXml = &#39;&lt;a n=&quot;firstName&quot;&gt;Business&#39; + timestamp + &#39;&lt;/a&gt;&lt;a n=&quot;lastName&quot;&gt;Contact&lt;/a&gt;&lt;a n=&quot;email&quot;&gt;biz&#39; + timestamp + &#39;@company.com&lt;/a&gt;&lt;a n=&quot;company&quot;&gt;ACME Corp&lt;/a&gt;&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.35">
+      <div class="step-ref passed">35</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>request read(&#39;classpath:requests/createContactDynamic.xml&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">9</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.36">
+      <div class="step-ref passed">36</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method post</span>
+      </div>
+    </div>
+    <div class="time-cell passed">65</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.36">21:53:53.468 request:
+1 &gt; POST https://80.225.207.85/service/soap/
+1 &gt; Content-Type: application/xml; charset=UTF-8
+1 &gt; Content-Length: 772
+1 &gt; Host: 80.225.207.85
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.14 (Java/21.0.7)
+1 &gt; Accept-Encoding: gzip,deflate
+&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;
+  &lt;soap:Header&gt;
+    &lt;context xmlns=&quot;urn:zimbra&quot;&gt;
+      &lt;authToken&gt;0_967036304c2fcee460d63abe2f4245dcc309953e_69643d33363a38303439303461372d346463302d346365642d626437332d6136393836376563653234383b6578703d31333a313735333633333433333637303b747970653d363a7a696d6272613b753d313a613b7469643d31303a313634393235343336373b76657273696f6e3d31343a31302e312e305f47415f343635353b637372663d313a313b&lt;/authToken&gt;
+        &lt;csrfToken&gt;0_0deae545a1479e9b6d91f84e0bff3fdd87a303d9&lt;/csrfToken&gt;
+    &lt;/context&gt;
+  &lt;/soap:Header&gt;
+  &lt;soap:Body&gt;
+    &lt;CreateContactRequest xmlns=&quot;urn:zimbraMail&quot;&gt;
+      &lt;cn&gt;
+        
+        #(contactFields)
+    
+      &lt;/cn&gt;
+    &lt;/CreateContactRequest&gt;
+  &lt;/soap:Body&gt;
+&lt;/soap:Envelope&gt;
+
+21:53:53.523 response time in milliseconds: 53
+1 &lt; 500
+1 &lt; Server: nginx
+1 &lt; Date: Fri, 25 Jul 2025 16:23:53 GMT
+1 &lt; Content-Type: text/xml;charset=utf-8
+1 &lt; Content-Length: 531
+1 &lt; Connection: keep-alive
+1 &lt; Cache-Control: no-store, no-cache
+&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&lt;soap:Header&gt;&lt;context xmlns=&quot;urn:zimbra&quot;&gt;&lt;change token=&quot;1069&quot;/&gt;&lt;/context&gt;&lt;/soap:Header&gt;&lt;soap:Body&gt;&lt;soap:Fault&gt;&lt;soap:Code&gt;&lt;soap:Value&gt;soap:Sender&lt;/soap:Value&gt;&lt;/soap:Code&gt;&lt;soap:Reason&gt;&lt;soap:Text&gt;invalid request: contact must have fields&lt;/soap:Text&gt;&lt;/soap:Reason&gt;&lt;soap:Detail&gt;&lt;Error xmlns=&quot;urn:zimbra&quot;&gt;&lt;Code&gt;service.INVALID_REQUEST&lt;/Code&gt;&lt;Trace&gt;qtp1150284200-30693:1753460633776:2f4ae0e4a8b94020&lt;/Trace&gt;&lt;/Error&gt;&lt;/soap:Detail&gt;&lt;/soap:Fault&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.37">
+      <div class="step-ref failed">37</div>
+      
+      <div class="step-cell failed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell failed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.37">21:53:53.531 classpath:features/conditionalLogic.feature:37
+Then status 200
+status code was: 500, expected: 200, response time in milliseconds: 53, url: https://80.225.207.85/service/soap/, response: 
+&lt;soap:Envelope xmlns:soap=&quot;http://www.w3.org/2003/05/soap-envelope&quot;&gt;&lt;soap:Header&gt;&lt;context xmlns=&quot;urn:zimbra&quot;&gt;&lt;change token=&quot;1069&quot;/&gt;&lt;/context&gt;&lt;/soap:Header&gt;&lt;soap:Body&gt;&lt;soap:Fault&gt;&lt;soap:Code&gt;&lt;soap:Value&gt;soap:Sender&lt;/soap:Value&gt;&lt;/soap:Code&gt;&lt;soap:Reason&gt;&lt;soap:Text&gt;invalid request: contact must have fields&lt;/soap:Text&gt;&lt;/soap:Reason&gt;&lt;soap:Detail&gt;&lt;Error xmlns=&quot;urn:zimbra&quot;&gt;&lt;Code&gt;service.INVALID_REQUEST&lt;/Code&gt;&lt;Trace&gt;qtp1150284200-30693:1753460633776:2f4ae0e4a8b94020&lt;/Trace&gt;&lt;/Error&gt;&lt;/soap:Detail&gt;&lt;/soap:Fault&gt;&lt;/soap:Body&gt;&lt;/soap:Envelope&gt;
+classpath:features/conditionalLogic.feature:37
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.38">
+      <div class="step-ref skipped">38</div>
+      
+      <div class="step-cell skipped">
+        <span>*</span>&nbsp;<span>print &#39;SUCCESS! Business contact created&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

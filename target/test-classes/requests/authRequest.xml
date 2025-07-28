@@ -3,7 +3,9 @@
       
    </soapenv:Header>
    <soapenv:Body>
-      <urn1:AuthRequest  name="#(username)" password="#(password)">
-      </urn1:AuthRequest>
+    <urn1:AuthRequest>
+	    <urn1:account by="name">#(username)</urn1:account>
+	    <urn1:password>#(password)</urn1:password>
+	 </urn1:AuthRequest>
    </soapenv:Body>
 </soapenv:Envelope>
