@@ -1,0 +1,22 @@
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:zimbraMail">
+  <soap:Header>
+    <context xmlns="urn:zimbra">
+      <authToken>#(authToken)</authToken>
+      <csrfToken>#(csfrToken)</csrfToken>
+    </context>
+  </soap:Header>
+  <soap:Body>
+    <urn:CreateContactRequest>
+      <cn>
+        <a n="firstName">#(firstName)</a>
+        <a n="lastName">#(lastName)</a>
+        <a n="email">#(email)</a>
+        <a n="company">#(company)</a>
+      </cn>
+    </urn:CreateContactRequest>
+  </soap:Body>
+</soap:Envelope>
+
+
+
+
