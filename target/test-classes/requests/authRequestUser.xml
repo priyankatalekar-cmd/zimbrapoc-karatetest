@@ -2,7 +2,7 @@
   <soap:Header/>
   <soap:Body>
     <AuthRequest xmlns="urn:zimbraAccount" csrfTokenSecured="1">
-      <account by="name">#(username)</account>
+      <account by="#(authType)">#(accountValue)</account>
       <password>#(password)</password>
     </AuthRequest>
   </soap:Body>
