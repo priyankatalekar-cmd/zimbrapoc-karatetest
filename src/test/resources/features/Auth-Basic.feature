@@ -7,7 +7,7 @@ Feature: Send Email from one account to another using SOAP API
     * def createdId = result.accountId
     * def foreignPrincipal = result.foreignPrincipal
 
-  @SmokeTest
+  @Sanity
   Scenario Outline: Login into Client using various account by tags
     * url userSoapUrl
     * def username = createdEmail
