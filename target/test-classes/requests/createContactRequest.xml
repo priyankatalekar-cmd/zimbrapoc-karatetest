@@ -8,10 +8,11 @@
   <soap:Body>
     <urn:CreateContactRequest>
       <cn>
-        <a n="firstName">#(firstName)</a>
-        <a n="lastName">#(lastName)</a>
-        <a n="email">#(email)</a>
-        <a n="company">#(company)</a>
+        
+        #(baseTags)
+        #(extendedTags)
+        #(phoneTags)
+        #(addressTags)
       </cn>
     </urn:CreateContactRequest>
   </soap:Body>
