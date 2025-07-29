@@ -8,6 +8,8 @@ Feature: Send Email from one Account to Another Account using SOAP API
     ########################### userLogin Sender###############################################################
     * def username = 'xyz2313490priyankatalekar5@qa-u56-singlenode-ps.eng.zimbra.com'
     * def password = 'Welcome123'
+    * def authType = 'name'
+    * def accountValue = username
     * def env = karate.read('classpath:requests/authRequestUser.xml')
     Given request env
     And header Content-Type = 'application/soap+xml'
@@ -35,6 +37,8 @@ Feature: Send Email from one Account to Another Account using SOAP API
     ########################### userLogin Receiver ###############################################################
     * def username = 'qauser_892c0c26@qa-u56-singlenode-ps.eng.zimbra.com'
     * def password = 'Welcome123'
+    * def authType = 'name'
+    * def accountValue = username
     * def env = karate.read('classpath:requests/authRequestUser.xml')
     Given request env
     And header Content-Type = 'application/soap+xml'
