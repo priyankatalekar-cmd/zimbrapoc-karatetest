@@ -1,12 +1,16 @@
-Feature: Create Client Account for Zimbra
+Feature: Create User Account as Zimbra Admin
+
+#Steps
+# 1. Login as Admin
+# 2. Create a user Account
 
   Background: 
     * configure ssl = true
 
   @Sanity
-  Scenario Outline: Inject foreignPrincipal dynamically in XML request- Create a User Account by foreignPrincipal
+  Scenario Outline: Create a user Account with and without zimbraForeignPrincipal
     * url adminSoapUrl
-    * def result = call read('classpath:features/Login.feature')
+    * def result = call read('classpath:features/Admin-Login.feature')
     * def authToken = result.authToken
     * print authToken
     * def randomId = java.util.UUID.randomUUID().toString().substring(0, 8)

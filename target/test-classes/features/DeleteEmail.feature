@@ -8,6 +8,8 @@ Scenario: Search email and delete by message ID
  ########################### userLogin Receiver ###############################################################
     * def username = 'qauser_892c0c26@qa-u56-singlenode-ps.eng.zimbra.com'
     * def password = 'Welcome123'
+    * def authType = 'name'
+    * def accountValue = username
     * def env = karate.read('classpath:requests/authRequestUser.xml')
     Given request env
     And header Content-Type = 'application/soap+xml'

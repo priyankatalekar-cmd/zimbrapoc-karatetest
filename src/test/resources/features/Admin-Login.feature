@@ -1,10 +1,10 @@
-Feature: Login to Zimbra using SOAP API- Admin 
+Feature: Login to Zimbra using SOAP API- Admin
 
   Background: 
     * url adminSoapUrl
 
-  @Admin_Login
-  Scenario Outline: Admin Login
+  @Sanity
+  Scenario Outline: Admin Login- Admin Portal
     * def username = '<username>'
     * def password = '<password>'
     * def soaprequest = karate.read('classpath:requests/authRequest.xml')
@@ -15,10 +15,8 @@ Feature: Login to Zimbra using SOAP API- Admin
     Then status 200
     * def authToken = karate.xmlPath(response, '//authToken')
     * print 'Auth Token is:', authToken
+    * match authToken != null
+    * match authToken != ''
 
     Examples: 
       | karate.read('classpath:testData/usersAdminValid.csv') |
-      
-
-      
-      

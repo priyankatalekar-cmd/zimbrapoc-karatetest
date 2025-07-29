@@ -7,6 +7,8 @@ Feature: Create Zimbra Appointment using karate.read()
     * configure ssl = true
     
     # Step 1: Authenticate user and extract tokens
+    * def authType = 'name'
+    * def accountValue = username
     * def loginRequest = read('classpath:requests/authRequestUser.xml')
     Given request loginRequest
     And header Content-Type = 'application/soap+xml'
@@ -35,6 +37,7 @@ Feature: Create Zimbra Appointment using karate.read()
     * def attendee = test_account2
     * def startTime = '20250723T080000Z'
     * def endTime = '20250723T083000Z'
+    
     
     # Step 3: Read SOAP body with #(...) variable substitution
     * def requestBody = read('classpath:requests/createAppointmentRequest.xml')
