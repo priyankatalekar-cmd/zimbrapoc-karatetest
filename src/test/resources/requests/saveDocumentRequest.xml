@@ -2,10 +2,14 @@
   <soap:Header>
     <context xmlns="urn:zimbra">
       <authToken>#(authToken)</authToken>
-        <csrfToken>#(csfrToken)</csrfToken>
+      <csrfToken>#(csrfToken)</csrfToken>
     </context>
   </soap:Header>
   <soap:Body>
-    <GetFolderRequest xmlns="urn:zimbraMail"/>
+    <SaveDocumentRequest xmlns="urn:zimbraMail">
+      <doc l="#(briefcaseId)">
+        <upload id="#(uploadAid)"/>
+      </doc>
+    </SaveDocumentRequest>
   </soap:Body>
 </soap:Envelope>
