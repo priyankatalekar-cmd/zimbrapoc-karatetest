@@ -1,11 +1,12 @@
 Feature: Send Email from one Account to Another Account using SOAP API
 
   Background: 
+#===================================================Common Configuration ================================================================================
     * url userSoapUrl
 
   @SmokeTest1
   Scenario: Send Email from one Account to Another Account using SOAP API and Verify User Received Successfully
-    ########################### userLogin Sender###############################################################
+#================================================== User Login into WebClient===========================================================================
     * def username = 'xyz2313490priyankatalekar5@qa-u56-singlenode-ps.eng.zimbra.com'
     * def password = 'Welcome123'
     * def authType = 'name'

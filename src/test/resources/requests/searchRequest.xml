@@ -1,0 +1,18 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+  <soap:Header>
+    <context xmlns="urn:zimbra">
+      <authToken>#(authToken)</authToken>
+        <csrfToken>#(csfrToken)</csrfToken>
+    </context>
+  </soap:Header>
+  <soap:Body>
+    <SearchRequest limit="100"
+          needExp="true"
+          recip="2"
+          sortBy="nameAsc"
+          types="#(typeValue)"
+          xmlns="urn:zimbraMail">
+    <query>#(searchQuery)</query>
+    </SearchRequest>
+  </soap:Body>
+</soap:Envelope>
