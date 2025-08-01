@@ -10,7 +10,7 @@
           needExp="true"
           recip="2"
           sortBy="nameAsc"
-          types="#(typeValue)"
+          types="(typeValue)"
           xmlns="urn:zimbraMail">
     <query>#(searchQuery)</query>
     </SearchRequest>

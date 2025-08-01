@@ -5,7 +5,7 @@ public class RunnerTest {
 	 @Karate.Test
 	    Karate testZimbraFeatures() {
 	        // This will run all feature files under zimbra/ package
-	        return Karate.run("classpath:features/Create-User-Accounts.feature");
+	        return Karate.run("classpath:features/SendEmail-ZimAccount.feature");
 	        		
 	    }
 }

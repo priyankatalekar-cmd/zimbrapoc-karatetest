@@ -1,6 +1,6 @@
 Feature: Common Assertions
 
- @Verify_CreateAccountResponse
+  @Verify_CreateAccountResponse
   Scenario: Verify Create Contact Response
     * match accountId != null
     * match accountId != ''
@@ -40,9 +40,9 @@ Feature: Common Assertions
     * def csfrToken = karate.xmlPath(response,'//csrfToken')
     * print 'csrfToken is:', csfrToken
     * match csfrToken != null
-     # Return tokens explicitly to caller
-  * def result = { userAuthToken: userAuthToken, csfrToken: csfrToken }
-  
+    # Return tokens explicitly to caller
+    * def result = { userAuthToken: userAuthToken, csfrToken: csfrToken }
+
   @Verify_SearchResponse
   Scenario: Verify Search Response
     # Extract each value directly from the full XML response:
@@ -58,4 +58,3 @@ Feature: Common Assertions
     * match lastName == contactData.lastName
     * match email == contactData.email
     * match company == contactData.company
- 

@@ -68,9 +68,9 @@ Feature: Briefcase- Upload a File
     * match actualfileName == '<fileName>'
 
     Examples: 
-      | fileName           |testDescription|
-      |defaultConfig.json  |JSON|
-      |Screenshot.png			 |PNG|
-      |Word.docx					 |Word|
-      |TextFile.txt				 |Text|
-      |xml_request_values.pdf  |PDF|
+      | fileName               | testDescription |
+      | defaultConfig.json     | JSON            |
+      | Screenshot.png         | PNG             |
+      | Word.docx              | Word            |
+      | TextFile.txt           | Text            |
+      | xml_request_values.pdf | PDF             |

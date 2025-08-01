@@ -1,8 +1,8 @@
 @CreateContact
 Feature: Create a Contact
 
-  Background:
-#===================================================Common Configurations================================================================================ 
+  Background: 
+    #===================================================Common Configurations================================================================================
     * def DataFaker = Java.type('com.github.javafaker.Faker')
     * def faker = new DataFaker()
     * def DataGenerator = Java.type('utils.DataGenerator')
@@ -12,7 +12,7 @@ Feature: Create a Contact
 
   @Sanity
   Scenario: Create a Contact with basic fields
-#====================================================Common Account Creation & Login=================================================================
+    #====================================================Common Account Creation & Login=================================================================
     #  * def includeAccountTag = karate.get('includeAccountTag', false)
     #  * def result = call read('classpath:features/CreateAccount.feature')
     * def Tag = 'name'
@@ -21,7 +21,7 @@ Feature: Create a Contact
     * def loginResponse = call read('classpath:features/Auth-Basic.feature@Common_Login')
     * def authToken = loginResponse.authToken
     * def csfrToken = loginResponse.csfrToken
-#=====================================================Configure Data As per Request====================================================================
+    #=====================================================Configure Data As per Request====================================================================
     # Configuration flags
     * def includeExtendedFields = false
     * def includePhoneFields = false
@@ -40,8 +40,7 @@ Feature: Create a Contact
     * def finalRequest = finalRequest.replace('#(phoneTags)', phoneTags)
     * def finalRequest = finalRequest.replace('#(addressTags)', addressTags)
     * print finalRequest
-    
-#=================================================Create Contact API Call==============================================================================
+    #=================================================Create Contact API Call==============================================================================
     * url userSoapUrl
     Given request finalRequest
     And header Content-Type = 'application/soap+xml'
@@ -56,16 +55,16 @@ Feature: Create a Contact
     # Additional verification - ensure it's numeric
     * def contactIdAsNumber = parseInt(contactId)
     * assert contactIdAsNumber > 0
-#=====================================================Assertion=======================================================================================
+    #=====================================================Assertion=======================================================================================
     * def result = call read('classpath:features/Common-Assertions.feature@Verify_Contact')
-#==================================================== GetContact API Call=============================================================================
+    #==================================================== GetContact API Call=============================================================================
     * def attributeName = contactData.firstName
     * def soaprequest = karate.read('classpath:requests/getContactRequest.xml')
     Given request soaprequest
     And header Content-Type = 'application/soap+xml'
     When method POST
     Then status 200
-#======================================================SearchContact===================================================================================
+    #======================================================SearchContact===================================================================================
     * def searchQuery = contactData.firstName
     * def typeValue = 'contact'
     * def soaprequest = karate.read('classpath:requests/searchRequest.xml')
@@ -73,5 +72,5 @@ Feature: Create a Contact
     And header Content-Type = 'application/soap+xml'
     When method POST
     Then status 200
-#========================================================Verify Search Response==========================================================================
+    #========================================================Verify Search Response==========================================================================
     * def result = call read('classpath:features/Common-Assertions.feature@Verify_SearchResponse')

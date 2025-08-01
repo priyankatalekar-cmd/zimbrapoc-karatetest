@@ -1,19 +1,24 @@
-<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:urn="urn:zimbra" xmlns:urn1="urn:zimbraMail">
+ <soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
   <soap:Header>
-    <urn:context>
-      <urn:authToken>#(authToken)</urn:authToken>
-      <urn:csrfToken>#(csrfToken)</urn:csrfToken>
-    </urn:context>
+    <context xmlns="urn:zimbra">
+      <authToken>#(authToken)</authToken>
+      <csrfToken>#(csfrToken)</csrfToken>
+    </context>
   </soap:Header>
   <soap:Body>
-    <urn1:SendMsgRequest>
-      <urn1:m>
-        <urn1:su>#(subject)</urn1:su>
-        <urn1:e a="#(to)" t="t"/>
-        <urn1:mp ct="#(contentType)">
-          <urn1:content>#(body)</urn1:content>
-        </urn1:mp>
-      </urn1:m>
-    </urn1:SendMsgRequest>
+    <SendMsgRequest xmlns="urn:zimbraMail">
+	<m>
+	  <e t="t" a='#(test_account1)'/>
+	  <e t="c" a='#(test_account2)'/>
+	  <e t="b" a='#(test_account3)'/>
+	  <su>#(subject)</su>
+	  <mp ct="text/plain">
+	      <content> #(content)</content>
+	  </mp>
+	</m>
+   </SendMsgRequest>
   </soap:Body>
 </soap:Envelope>
+   
+   
+  
