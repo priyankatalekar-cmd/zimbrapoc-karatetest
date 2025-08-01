@@ -1,0 +1,14 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+  <soap:Header>
+    <context xmlns="urn:zimbra">
+      <authToken>#(authToken)</authToken>
+        <csrfToken>#(csfrToken)</csrfToken>
+    </context>
+  </soap:Header>
+  <soap:Body>
+    <GetFolderRequest xmlns="urn:zimbraMail">
+    <cn id="#(contactId)"/>
+    <a n="#(attributeName)"/>
+    </GetFolderRequest>
+  </soap:Body>
+</soap:Envelope>
